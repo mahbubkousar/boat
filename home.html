@@ -127,9 +127,6 @@ span.psw {
   }
   }
   
- 
- 
- 
   </style>
   </head>
   <body>
@@ -154,48 +151,29 @@ span.psw {
   </div>
   
   <div class="container">
-<!--
-  <b>Username</b></label>
-  <input type="text" placeholder="Enter Username" name="uname">
-  
--->
-
-  
-  <b>Password</b></label>
-  <input type="password" placeholder="Enter Password" id="pswd" required>
-  
-  <button type="submit" onclick="checkPswd();">Login</button>
-  <!--
-  <label>
-  
-  <input type="checkbox" checked="checked" name="remember"> Remember me
-  </label>
-  -->
-  </div>
-  
-  
- <div class="container" style="height:4px;background-color:#f1f1f1">
- <!--
-  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-  -->
-  
-  </div>
+  <form>
+  <label for="pswd"><b>Enter your password: </b></label>
+  <input type="password" id="pswd" style="width: 100%;padding: 12px 20px;margin: 8px 0px;display: inline-block;border: 1px solid #ccc;box-sizing: border-box;">
+  <input type="button" style="background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;" value="Submit" onclick="checkPswd();" />
   </form>
-  </div>
-  
-  <script>
- function checkPswd() {
-       var confirmPassword = "1279";
-       var password = document.getElementById("pswd").value;
-       if (password == confirmPassword) {
-            window.location="https://mahbubkousar.github.io/boat/right.html";
-       }
-       else{
-           window.location="https://mahbubkousar.github.io/boat/wrong.html";
-           
-       }
-   }
-  
+  <!--Function to check password the already set password is admin-->
+  <script type="text/javascript">
+  function checkPswd() {
+  var confirmPassword = "mak";
+  var password = document.getElementById("pswd").value;
+  if (password == confirmPassword) {
+  window.location="https://mahbubkousar.github.io/boat/right.html";
+  }
+  else{
+  window.location="https://mahbubkousar.github.io/boat/wrong.html";
+  }
+  }
   </script>
   
   </body>
